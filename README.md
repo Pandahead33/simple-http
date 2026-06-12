@@ -50,6 +50,21 @@ Transmitting to client: 127.0.0.1:34324
 Successful! Served client: 127.0.0.1:3424
 ```
 
+## Making Changes
+The code is in two files inside the `/src` folder. There is `main.zig` which is the typical entry point for Zig apps. I created the project using `zig init` which generated this file structure.
+
+`main.zig` calls to the `simple-http` package which is the code inside of `root.zig`. Since the project is called simple-http, this is how you can reference it:
+
+```zig
+const simple_http = @import("simple_http");
+```
+
+`main.zig` set up the server and address, but the complexity of handling the connection is all done inside of `zoot.rig`. This is an arbitrary abstraction to make it slightly more complicated; putting it all in one file is possible.
+
+However, this complexity helped with the learning process of Zig. Now we know how to fully setup a package, use it within another, and share functions with different level of scopes between them. It also makes it easier to expand later.
+
+Now we can simply add new handling functions into the package or reuse it in other projects without needing the main code. In fact, we should likely stick all of the code within the package and abstract it further from the main.
+
 ## Limitations
 This is not super fleshed out. It has a bit of error handling, but no custom messages or edge cases. 
 
