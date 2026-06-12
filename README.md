@@ -28,11 +28,26 @@ In the simple-http directory, use the command  `zig build run`.
 If it worked, you should see
 
 ```
+Listening to 127.0.0.1:8080...
+```
 
 You can hit it by opening another terminal and running 
 
 ``` sh
 curl localhost:8080
+```
+
+Which should output
+
+```sh
+Hello World!
+```
+
+If you look back at the server output, it should show the client ip:
+
+```sh
+Transmitting to client: 127.0.0.1:34324
+Successful! Served client: 127.0.0.1:3424
 ```
 
 ## Limitations
@@ -43,3 +58,5 @@ For instance, it will error out if the port is already in use, but we could hand
 
 ## Future
 I likely will play with this a bit more, but it is intended simply to be a basic overview of Zim and to help anyone who was either A) new to Zig or B) confused by the new API. I will be posting my ZIgling exercise solutions in another repo, so follow me on Github if you're interested in those.
+
+Feel free to use this for your learning purposes! I will be add serving HTML soon.
