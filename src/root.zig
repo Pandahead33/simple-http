@@ -22,7 +22,7 @@ pub fn handleConnection(conn: std.Io.net.Stream, io: std.Io) !void {
     try req.respond("Hello World!\n", std.http.Server.Request.RespondOptions{});
 }
 
-pub fn printIp4Address(message: []const u8, a: std.Io.net.Ip4Address) void {
+fn printIp4Address(message: []const u8, a: std.Io.net.Ip4Address) void {
     const bytes = &a.bytes;
     print("{s} client: {d}.{d}.{d}.{d}:{d}\n", .{ message, bytes[0], bytes[1], bytes[2], bytes[3], a.port });
 }
