@@ -3,9 +3,9 @@
 
 ## Context
 
-I've been working my way through the [Zigling exercises]()
+I've been working my way through the [Zigling exercises](https://codeberg.org/ziglings/exercises)
 
-I watched a cool interview with Zig's creator and it inspired me to try out the language.
+I watched [a cool interview with Zig's creator](https://youtu.be/iqddnwKF8HQ?si=s3h03rfvGMFxGZ2Q) and it inspired me to try out the language.
 
 Ziglings are fun, but I wanted to do something concrete.
 
