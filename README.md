@@ -1,4 +1,4 @@
-# Simple HTTP Client in Zig
+# Simple HTTP Server in Zig
 
 
 ## Context
