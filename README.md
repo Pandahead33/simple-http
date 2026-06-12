@@ -59,4 +59,4 @@ For instance, it will error out if the port is already in use, but we could hand
 ## Future
 I likely will play with this a bit more, but it is intended simply to be a basic overview of Zim and to help anyone who was either A) new to Zig or B) confused by the new API. I will be posting my ZIgling exercise solutions in another repo, so follow me on Github if you're interested in those.
 
-Feel free to use this for your learning purposes! I will be add serving HTML soon.
+Feel free to use this for your learning purposes! I will add serving HTML soon.
